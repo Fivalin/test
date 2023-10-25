@@ -1,0 +1,23 @@
+.chat{
+min-width: 500px;
+min-height: 600px;
+border: 5px solid rgb(138, 94, 221);
+background-color: #7633c4;
+font-size: 30px;
+margin-top: 20px;
+color: white;
+border-radius: 5%;
+
+}
+.wrapper{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 200px;
+    color: white;
+    background-color: #9844cf;
+
+}
