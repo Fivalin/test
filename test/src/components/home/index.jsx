@@ -6,7 +6,7 @@ import { useLocalStorage } from '../../hook/useLocalStorage';
 const Home = () => {
    // const [user,setUser] = useState('')
    const [user,setUser] = useLocalStorage('user','')
-   const [me,setMe] = useLocalStorage('dataMe',"")
+   const [password,setPassword] = useLocalStorage('pasword',"")
 
     const [inputValue,setIbputValue] = useState('')
     const [inputValue1,setIbputValue1] = useState('')
@@ -18,7 +18,7 @@ const Home = () => {
        {user && (
             <div style={{color: "white"}}>
                 <div> Приветствую вас {user}.Теперь вы можете продолжить работу на сайте</div>
-                <button onClick={() => {setUser('') ; setMe('')}}>Выйти</button>
+                <button onClick={() => {setUser('') ; setPassword('')}}>Выйти</button>
             </div>
         )}
         {!user && (
@@ -42,7 +42,7 @@ const Home = () => {
                 type='password'
                 />
                 
-                <button onClick={() =>  {setUser(inputValue); setMe(inputValue1)}}>Войти на сайт</button>
+                <button onClick={() =>  {setUser(inputValue); setPassword(inputValue1)}}>Войти на сайт</button>
             </div>
         )}
     </div>
