@@ -43,10 +43,6 @@ const Home = () => {
                 />
                 
                 <button onClick={() =>  {setUser(inputValue); setMe(inputValue1)}}>Войти на сайт</button>
-                <button   onClick={() => {
-                    return(
-          alert("Добрый день. Это мой начальный сайт. Он небольшой и можно сделать куда больше, но надеюсь он вам понравится)")
-        )} }>Нажмите для сообщения</button>
             </div>
         )}
     </div>
