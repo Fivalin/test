@@ -10,6 +10,7 @@ const Home = () => {
 
     const [inputValue,setIbputValue] = useState('')
     const [inputValue1,setIbputValue1] = useState('')
+    const [inputValue2,setIbputValue2] = useState('')
 
 
 
@@ -31,11 +32,16 @@ const Home = () => {
                  <input
                 value={inputValue1}
                 onChange={(e) => setIbputValue1(e.target.value)}
-                placeholder='Расскажите о себе'
-                type='text'
+                placeholder='Введите пароль'
+                type='password'
                 />
-               
-
+                 <input
+                value={inputValue2}
+                onChange={(e) => setIbputValue2(e.target.value)}
+                placeholder='Повторите пароль'
+                type='password'
+                />
+                
                 <button onClick={() =>  {setUser(inputValue); setMe(inputValue1)}}>Войти на сайт</button>
                 <button   onClick={() => {
                     return(
